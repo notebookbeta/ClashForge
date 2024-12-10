@@ -50,7 +50,6 @@ https://igdux.top/5Hna
 https://proxypool.link/clash/proxies
 https://raw.githubusercontent.com/ssrsub/ssr/master/ss-sub
 https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml
-https://raw.githubusercontent.com/dowment/run/refs/heads/main/Clash.yml
 https://oxo.o00o.ooo/ooo
 https://owo.o00o.ooo/ooo
 https://vless.fxxk.dedyn.io/auto
