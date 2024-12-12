@@ -59,7 +59,7 @@ clash_config_template = {
     "external-controller": "127.0.0.1:9090",
     "geodata-mode": True,
     #'geox-url': {'geoip': 'https://gitdl.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/geoip.dat', 'mmdb': 'https://gitdl.cn/https://raw.githubusercontent.com/Loyalsoldier/geoip/release/GeoLite2-Country.mmdb'},
-    'geox-url': {'geoip': 'https://gitdl.cn/https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat', 'mmdb': 'https://gitdl.cn/https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb'},
+    'geox-url': {'geoip': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/geoip.dat', 'mmdb': 'https://cdn.jsdelivr.net/gh/Loyalsoldier/geoip@release/GeoLite2-Country.mmdb'},
     "dns": {
         "enable": True,
         "ipv6": False,
