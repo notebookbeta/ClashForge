@@ -1493,7 +1493,7 @@ def add_random_suffix(name, existing_names):
         new_name = f"{name}-{suffix}"
     return new_name
 
-/*
+'''
 # 从指定目录下的txt读取代理链接
 def read_txt_files(folder_path):
     all_lines = []  # 用于存储所有文件的行
@@ -1509,7 +1509,7 @@ def read_txt_files(folder_path):
     if all_lines:
         print(f'加载【{folder_path}】目录下所有txt中节点')
     return all_lines
-*/
+'''
 def read_txt_files(folder_path):
     all_lines = []  # Used to store all valid YAML lines
 
