@@ -1510,10 +1510,6 @@ def read_txt_files(folder_path):
         print(f'加载【{folder_path}】目录下所有txt中节点')
     return all_lines
 '''
-import glob
-import os
-import yaml
-
 def read_txt_files(folder_path):
     all_lines = []  # Used to store all valid YAML lines
 
