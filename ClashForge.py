@@ -1493,7 +1493,6 @@ def add_random_suffix(name, existing_names):
         new_name = f"{name}-{suffix}"
     return new_name
 
-'''
 # 从指定目录下的txt读取代理链接
 def read_txt_files(folder_path):
     all_lines = []  # 用于存储所有文件的行
@@ -1508,36 +1507,6 @@ def read_txt_files(folder_path):
             all_lines.extend(line.strip() for line in lines)  # 去除每行的换行符并添加到数组中
     if all_lines:
         print(f'加载【{folder_path}】目录下所有txt中节点')
-    return all_lines
-'''
-def read_txt_files(folder_path):
-    all_lines = []  # Used to store all valid YAML lines
-
-    # Get all txt files in the specified folder
-    txt_files = glob.glob(os.path.join(folder_path, '*.txt'))
-
-    for file_path in txt_files:
-        valid_lines = []
-        with open(file_path, 'r', encoding='utf-8') as file:
-            lines = file.readlines()
-
-            # Preprocess to remove invalid lines
-            for line in lines:
-                if '!<str>' not in line:
-                    valid_lines.append(line)
-
-            # Join valid lines to form a single YAML string
-            yaml_content = ''.join(valid_lines)
-
-            try:
-                # Attempt to parse the YAML content
-                yaml.safe_load(yaml_content)
-                all_lines.extend(valid_lines)
-            except yaml.YAMLError as e:
-                print(f"YAML error in {file_path}: {e}")
-
-    if all_lines:
-        print(f'Loaded all valid YAML lines from {folder_path} directory')
     return all_lines
 
 # 从指定目录下的yaml/yml读取proxies
