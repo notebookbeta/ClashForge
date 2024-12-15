@@ -1510,6 +1510,10 @@ def read_txt_files(folder_path):
         print(f'加载【{folder_path}】目录下所有txt中节点')
     return all_lines
 '''
+import glob
+import os
+import yaml
+
 def read_txt_files(folder_path):
     all_lines = []  # Used to store all valid YAML lines
 
@@ -1521,47 +1525,25 @@ def read_txt_files(folder_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
 
-            # Join lines to form a single YAML string
-            yaml_content = ''.join(lines)
+            # Preprocess to remove invalid lines
+            for line in lines:
+                if '!<str>' not in line:
+                    valid_lines.append(line)
+
+            # Join valid lines to form a single YAML string
+            yaml_content = ''.join(valid_lines)
 
             try:
                 # Attempt to parse the YAML content
                 yaml.safe_load(yaml_content)
-                valid_lines.extend(lines)
+                all_lines.extend(valid_lines)
             except yaml.YAMLError as e:
-                # If there is a YAML error, use yamllint to identify invalid lines
                 print(f"YAML error in {file_path}: {e}")
-                temp_file = "temp.yaml"
-                with open(temp_file, 'w', encoding='utf-8') as temp:
-                    temp.write(yaml_content)
-
-                # Use yamllint to check for errors
-                output = subprocess.check_output(f"yamllint {temp_file}", shell=True, text=True)
-                errors = output.splitlines()
-
-                # Identify and remove invalid lines
-                for error in errors:
-                    if "error" in error:
-                        line_number = int(error.split(":")[1].split())
-                        lines.pop(line_number - 1)
-
-                # Rejoin the remaining lines
-                yaml_content = ''.join(lines)
-                try:
-                    # Reattempt to parse the YAML content after removing invalid lines
-                    yaml.safe_load(yaml_content)
-                    valid_lines.extend(lines)
-                except yaml.YAMLError as e:
-                    print(f"Failed to parse YAML after removing invalid lines: {e}")
-
-                # Remove the temporary file
-                os.remove(temp_file)
-
-        all_lines.extend(line.strip() for line in valid_lines)
 
     if all_lines:
         print(f'Loaded all valid YAML lines from {folder_path} directory')
     return all_lines
+
 # 从指定目录下的yaml/yml读取proxies
 def read_yaml_files(folder_path):
     load_nodes = []
