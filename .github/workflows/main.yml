@@ -27,27 +27,21 @@ jobs:
       - name: Run ClashForge.py
         run: python ClashForge.py
 
-      - name: Commit and push file
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add clash_config.yaml
-          git commit -m "update" || echo "No changes to commit"
-          git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git
-
-      - name: Upload to Gist
+      - name: Push to Existing Gist
         env:
-          GIST_ID: ${{ secrets.GIST_ID }}
-          GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
+          GIST_ID: cc41c0b0b0d3f55ea11b576b0b5ba200
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          GIST_FILE='clashforge.yaml'
-          CONTENT=$(cat clash_config.yaml)
-          
-          echo "Preparing to update Gist with ID: $GIST_ID"
-          echo "Content to upload: $CONTENT"
+          FILE_PATH="clash_config.yaml"
+          NEW_FILE_NAME="clashforge.yaml"
 
-          RESPONSE=$(curl -s -X PATCH "https://api.github.com/gists/$GIST_ID" \
-          -H "Authorization: token $GIST_TOKEN" \
-          -d "{\"files\": {\"$GIST_FILE\": {\"content\": \"$CONTENT\"}}}")
+          # Get the Gist details
+          GIST_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/gists/$GIST_ID")
 
-          echo "Response from Gist API: $RESPONSE"
+          # Prepare the updated file content
+          CONTENT=$(cat "$FILE_PATH")
+
+          # Update the gist with the new file content and the new filename
+          curl -X PATCH -H "Authorization: token $GITHUB_TOKEN" \
+            -d '{"files": {"'$NEW_FILE_NAME'": {"content": "'"$CONTENT"'"}}}' \
+            "https://api.github.com/gists/$GIST_ID"
