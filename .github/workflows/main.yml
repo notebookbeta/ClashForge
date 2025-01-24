@@ -42,6 +42,12 @@ jobs:
         run: |
           GIST_FILE='clashforge.yaml'
           CONTENT=$(cat clash_config.yaml)
-          curl -X PATCH "https://api.github.com/gists/$GIST_ID" \
+          
+          echo "Preparing to update Gist with ID: $GIST_ID"
+          echo "Content to upload: $CONTENT"
+
+          RESPONSE=$(curl -s -X PATCH "https://api.github.com/gists/$GIST_ID" \
           -H "Authorization: token $GIST_TOKEN" \
-          -d "{\"files\": {\"$GIST_FILE\": {\"content\": \"$CONTENT\"}}}"
+          -d "{\"files\": {\"$GIST_FILE\": {\"content\": \"$CONTENT\"}}}")
+
+          echo "Response from Gist API: $RESPONSE"
