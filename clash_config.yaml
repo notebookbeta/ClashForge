@@ -231,17 +231,6 @@ proxies:
   ws-path: /
   ws-headers:
     Host: gw.alicdn.com
-- name: 🇸🇬 ip1 (预防dns污染)
-  type: vmess
-  server: 52.163.123.158
-  port: 443
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  alterId: 0
-  cipher: auto
-  udp: true
-  tls: true
-  skip-cert-verify: true
-  servername: gw.alicdn.com
 - name: 🇺🇸 美国1 (预防时间错误)
   type: vless
   server: 172.67.203.211
@@ -290,31 +279,30 @@ proxy-groups:
   - 🇺🇸 备用2 (预防dns污染)
   - 🇺🇸 美国1 (预防时间错误)
   - 🇺🇸 美国2 (预防时间错误)
-  - 🇯🇵 日本(三网) 1
   - 🇯🇵 日本(三网) 2
   - 🇯🇵 日本(三网) 3
-  - 台湾WAP-T-GPT-7DFd
+  - 🇯🇵 日本(三网) 1
   - 台湾WAP-T-GPT-D5GQ
-  - 🇸🇬 ip1 (预防dns污染)
-  - 澳大利亚AU-T-ulWr
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-oWPg
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
-  - 美国USLA-T-GPT-ltA2
-  - 澳大利亚AU-T-B4AQ
-  - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-w3b7
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-yIxS
+  - 台湾WAP-T-GPT-7DFd
   - 新加坡SG-T-tVHX
-  - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-zgZq
-  - 美国USLA-T-GPT-tPYz
-  - 美国USLA-T-GPT-mYmu
-  - 台湾WAP-T-GPT-IPsy
-  - 台湾WAP-T-GPT-rfqh
+  - 新加坡SG-T-oWPg
   - 新加坡SG-T-PkxV
+  - 新加坡SG-T-ZFaE
+  - 台湾WAP-T-GPT-rfqh
+  - 台湾WAP-T-GPT-IPsy
+  - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-B4AQ
+  - 美国USLA-T-GPT-ltA2
+  - 美国USLA-T-GPT-yIxS
+  - 美国USLA-T-GPT-pa4s
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-Y2nU
+  - 美国USLA-T-GPT-mYmu
+  - 美国USLA-T-GPT-tPYz
+  - 澳大利亚AU-T-zgZq
+  - 美国USLA-T-GPT-3Y1T
+  - 美国USLA-T-GPT-vy3b
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -325,31 +313,30 @@ proxy-groups:
   - 🇺🇸 备用2 (预防dns污染)
   - 🇺🇸 美国1 (预防时间错误)
   - 🇺🇸 美国2 (预防时间错误)
-  - 🇯🇵 日本(三网) 1
   - 🇯🇵 日本(三网) 2
   - 🇯🇵 日本(三网) 3
-  - 台湾WAP-T-GPT-7DFd
+  - 🇯🇵 日本(三网) 1
   - 台湾WAP-T-GPT-D5GQ
-  - 🇸🇬 ip1 (预防dns污染)
-  - 澳大利亚AU-T-ulWr
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-oWPg
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
-  - 美国USLA-T-GPT-ltA2
-  - 澳大利亚AU-T-B4AQ
-  - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-w3b7
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-yIxS
+  - 台湾WAP-T-GPT-7DFd
   - 新加坡SG-T-tVHX
-  - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-zgZq
-  - 美国USLA-T-GPT-tPYz
-  - 美国USLA-T-GPT-mYmu
-  - 台湾WAP-T-GPT-IPsy
-  - 台湾WAP-T-GPT-rfqh
+  - 新加坡SG-T-oWPg
   - 新加坡SG-T-PkxV
+  - 新加坡SG-T-ZFaE
+  - 台湾WAP-T-GPT-rfqh
+  - 台湾WAP-T-GPT-IPsy
+  - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-B4AQ
+  - 美国USLA-T-GPT-ltA2
+  - 美国USLA-T-GPT-yIxS
+  - 美国USLA-T-GPT-pa4s
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-Y2nU
+  - 美国USLA-T-GPT-mYmu
+  - 美国USLA-T-GPT-tPYz
+  - 澳大利亚AU-T-zgZq
+  - 美国USLA-T-GPT-3Y1T
+  - 美国USLA-T-GPT-vy3b
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
@@ -358,31 +345,30 @@ proxy-groups:
   - 🇺🇸 备用2 (预防dns污染)
   - 🇺🇸 美国1 (预防时间错误)
   - 🇺🇸 美国2 (预防时间错误)
-  - 🇯🇵 日本(三网) 1
   - 🇯🇵 日本(三网) 2
   - 🇯🇵 日本(三网) 3
-  - 台湾WAP-T-GPT-7DFd
+  - 🇯🇵 日本(三网) 1
   - 台湾WAP-T-GPT-D5GQ
-  - 🇸🇬 ip1 (预防dns污染)
-  - 澳大利亚AU-T-ulWr
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-oWPg
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
-  - 美国USLA-T-GPT-ltA2
-  - 澳大利亚AU-T-B4AQ
-  - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-w3b7
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-yIxS
+  - 台湾WAP-T-GPT-7DFd
   - 新加坡SG-T-tVHX
-  - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-zgZq
-  - 美国USLA-T-GPT-tPYz
-  - 美国USLA-T-GPT-mYmu
-  - 台湾WAP-T-GPT-IPsy
-  - 台湾WAP-T-GPT-rfqh
+  - 新加坡SG-T-oWPg
   - 新加坡SG-T-PkxV
+  - 新加坡SG-T-ZFaE
+  - 台湾WAP-T-GPT-rfqh
+  - 台湾WAP-T-GPT-IPsy
+  - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-B4AQ
+  - 美国USLA-T-GPT-ltA2
+  - 美国USLA-T-GPT-yIxS
+  - 美国USLA-T-GPT-pa4s
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-Y2nU
+  - 美国USLA-T-GPT-mYmu
+  - 美国USLA-T-GPT-tPYz
+  - 澳大利亚AU-T-zgZq
+  - 美国USLA-T-GPT-3Y1T
+  - 美国USLA-T-GPT-vy3b
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
