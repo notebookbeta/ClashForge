@@ -373,45 +373,45 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 🇺🇸 备用2 (预防dns污染)
-  - 🇺🇸 美国2 (预防时间错误)
   - 🇺🇸 美国1 (预防时间错误)
-  - 台湾WAP-T-GPT-OMOZ
-  - 越南VN-T-7IHa
-  - 澳大利亚AU-T-zgZq
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-tVHX
-  - 越南VN-T-DdWP
-  - 新加坡SG-T-vCeE
-  - 🇸🇬 ip1 (预防dns污染)
-  - 澳大利亚AU-T-B4AQ
-  - 新加坡SG-T-oWPg
-  - 🇯🇵 日本(三网) 3
-  - 美国USLA-T-GPT-yIxS
-  - 美国USLA-T-GPT-mYmu
-  - 美国USLA-T-GPT
-  - 美国USLA-T-GPT-ltA2
-  - 美国USLA-T-GPT-w3b7
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-tPYz
-  - 台湾WAP-T-GPT-YsHI
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
+  - 🇺🇸 美国2 (预防时间错误)
   - 🇯🇵 日本(三网) 2
-  - 台湾WAP-T-GPT-7DFd
-  - 台湾WAP-T-GPT-rfqh
   - 🇯🇵 日本(三网) 1
-  - 澳大利亚AU-T
+  - 🇯🇵 日本(三网) 3
   - 台湾WAP-T-GPT-IPsy
-  - 香港wap-T
-  - 澳大利亚AU-T-ulWr
+  - 台湾WAP-T-GPT-OMOZ
   - 台湾WAP-T-GPT-OuC9
-  - 台湾WAP-T-GPT-D5GQ
-  - 台湾WAP-T-GPT-S4e5
-  - 台湾WAP-T-GPT
-  - 澳大利亚AU-T-QzUC
-  - 新加坡SG-T-PkxV
+  - 台湾WAP-T-GPT-YsHI
+  - 🇸🇬 ip1 (预防dns污染)
   - 台湾WAP-T-GPT-P9vS
+  - 台湾WAP-T-GPT-S4e5
+  - 台湾WAP-T-GPT-rfqh
+  - 台湾WAP-T-GPT-D5GQ
+  - 台湾WAP-T-GPT-7DFd
+  - 越南VN-T-7IHa
+  - 新加坡SG-T-ZFaE
+  - 澳大利亚AU-T-ulWr
+  - 美国USLA-T-GPT-vy3b
+  - 台湾WAP-T-GPT
+  - 美国USLA-T-GPT-Y2nU
+  - 澳大利亚AU-T-QzUC
+  - 美国USLA-T-GPT-pa4s
+  - 澳大利亚AU-T-zgZq
+  - 美国USLA-T-GPT-ltA2
+  - 新加坡SG-T-tVHX
+  - 香港wap-T
+  - 美国USLA-T-GPT-yIxS
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-3Y1T
+  - 新加坡SG-T-PkxV
+  - 澳大利亚AU-T-B4AQ
+  - 新加坡SG-T-vCeE
+  - 新加坡SG-T-oWPg
+  - 越南VN-T-DdWP
+  - 美国USLA-T-GPT-mYmu
+  - 美国USLA-T-GPT-tPYz
+  - 澳大利亚AU-T
+  - 美国USLA-T-GPT
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -420,90 +420,90 @@ proxy-groups:
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
   - 🇺🇸 备用2 (预防dns污染)
-  - 🇺🇸 美国2 (预防时间错误)
   - 🇺🇸 美国1 (预防时间错误)
-  - 台湾WAP-T-GPT-OMOZ
-  - 越南VN-T-7IHa
-  - 澳大利亚AU-T-zgZq
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-tVHX
-  - 越南VN-T-DdWP
-  - 新加坡SG-T-vCeE
-  - 🇸🇬 ip1 (预防dns污染)
-  - 澳大利亚AU-T-B4AQ
-  - 新加坡SG-T-oWPg
-  - 🇯🇵 日本(三网) 3
-  - 美国USLA-T-GPT-yIxS
-  - 美国USLA-T-GPT-mYmu
-  - 美国USLA-T-GPT
-  - 美国USLA-T-GPT-ltA2
-  - 美国USLA-T-GPT-w3b7
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-tPYz
-  - 台湾WAP-T-GPT-YsHI
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
+  - 🇺🇸 美国2 (预防时间错误)
   - 🇯🇵 日本(三网) 2
-  - 台湾WAP-T-GPT-7DFd
-  - 台湾WAP-T-GPT-rfqh
   - 🇯🇵 日本(三网) 1
-  - 澳大利亚AU-T
+  - 🇯🇵 日本(三网) 3
   - 台湾WAP-T-GPT-IPsy
-  - 香港wap-T
-  - 澳大利亚AU-T-ulWr
+  - 台湾WAP-T-GPT-OMOZ
   - 台湾WAP-T-GPT-OuC9
-  - 台湾WAP-T-GPT-D5GQ
-  - 台湾WAP-T-GPT-S4e5
-  - 台湾WAP-T-GPT
-  - 澳大利亚AU-T-QzUC
-  - 新加坡SG-T-PkxV
+  - 台湾WAP-T-GPT-YsHI
+  - 🇸🇬 ip1 (预防dns污染)
   - 台湾WAP-T-GPT-P9vS
+  - 台湾WAP-T-GPT-S4e5
+  - 台湾WAP-T-GPT-rfqh
+  - 台湾WAP-T-GPT-D5GQ
+  - 台湾WAP-T-GPT-7DFd
+  - 越南VN-T-7IHa
+  - 新加坡SG-T-ZFaE
+  - 澳大利亚AU-T-ulWr
+  - 美国USLA-T-GPT-vy3b
+  - 台湾WAP-T-GPT
+  - 美国USLA-T-GPT-Y2nU
+  - 澳大利亚AU-T-QzUC
+  - 美国USLA-T-GPT-pa4s
+  - 澳大利亚AU-T-zgZq
+  - 美国USLA-T-GPT-ltA2
+  - 新加坡SG-T-tVHX
+  - 香港wap-T
+  - 美国USLA-T-GPT-yIxS
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-3Y1T
+  - 新加坡SG-T-PkxV
+  - 澳大利亚AU-T-B4AQ
+  - 新加坡SG-T-vCeE
+  - 新加坡SG-T-oWPg
+  - 越南VN-T-DdWP
+  - 美国USLA-T-GPT-mYmu
+  - 美国USLA-T-GPT-tPYz
+  - 澳大利亚AU-T
+  - 美国USLA-T-GPT
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
   - 🇺🇸 备用2 (预防dns污染)
-  - 🇺🇸 美国2 (预防时间错误)
   - 🇺🇸 美国1 (预防时间错误)
-  - 台湾WAP-T-GPT-OMOZ
-  - 越南VN-T-7IHa
-  - 澳大利亚AU-T-zgZq
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-tVHX
-  - 越南VN-T-DdWP
-  - 新加坡SG-T-vCeE
-  - 🇸🇬 ip1 (预防dns污染)
-  - 澳大利亚AU-T-B4AQ
-  - 新加坡SG-T-oWPg
-  - 🇯🇵 日本(三网) 3
-  - 美国USLA-T-GPT-yIxS
-  - 美国USLA-T-GPT-mYmu
-  - 美国USLA-T-GPT
-  - 美国USLA-T-GPT-ltA2
-  - 美国USLA-T-GPT-w3b7
-  - 美国USLA-T-GPT-vy3b
-  - 美国USLA-T-GPT-Y2nU
-  - 美国USLA-T-GPT-tPYz
-  - 台湾WAP-T-GPT-YsHI
-  - 美国USLA-T-GPT-pa4s
-  - 美国USLA-T-GPT-3Y1T
+  - 🇺🇸 美国2 (预防时间错误)
   - 🇯🇵 日本(三网) 2
-  - 台湾WAP-T-GPT-7DFd
-  - 台湾WAP-T-GPT-rfqh
   - 🇯🇵 日本(三网) 1
-  - 澳大利亚AU-T
+  - 🇯🇵 日本(三网) 3
   - 台湾WAP-T-GPT-IPsy
-  - 香港wap-T
-  - 澳大利亚AU-T-ulWr
+  - 台湾WAP-T-GPT-OMOZ
   - 台湾WAP-T-GPT-OuC9
-  - 台湾WAP-T-GPT-D5GQ
-  - 台湾WAP-T-GPT-S4e5
-  - 台湾WAP-T-GPT
-  - 澳大利亚AU-T-QzUC
-  - 新加坡SG-T-PkxV
+  - 台湾WAP-T-GPT-YsHI
+  - 🇸🇬 ip1 (预防dns污染)
   - 台湾WAP-T-GPT-P9vS
+  - 台湾WAP-T-GPT-S4e5
+  - 台湾WAP-T-GPT-rfqh
+  - 台湾WAP-T-GPT-D5GQ
+  - 台湾WAP-T-GPT-7DFd
+  - 越南VN-T-7IHa
+  - 新加坡SG-T-ZFaE
+  - 澳大利亚AU-T-ulWr
+  - 美国USLA-T-GPT-vy3b
+  - 台湾WAP-T-GPT
+  - 美国USLA-T-GPT-Y2nU
+  - 澳大利亚AU-T-QzUC
+  - 美国USLA-T-GPT-pa4s
+  - 澳大利亚AU-T-zgZq
+  - 美国USLA-T-GPT-ltA2
+  - 新加坡SG-T-tVHX
+  - 香港wap-T
+  - 美国USLA-T-GPT-yIxS
+  - 美国USLA-T-GPT-w3b7
+  - 美国USLA-T-GPT-3Y1T
+  - 新加坡SG-T-PkxV
+  - 澳大利亚AU-T-B4AQ
+  - 新加坡SG-T-vCeE
+  - 新加坡SG-T-oWPg
+  - 越南VN-T-DdWP
+  - 美国USLA-T-GPT-mYmu
+  - 美国USLA-T-GPT-tPYz
+  - 澳大利亚AU-T
+  - 美国USLA-T-GPT
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
