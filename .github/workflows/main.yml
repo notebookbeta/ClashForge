@@ -1,6 +1,8 @@
 name: ClashForge
 
 on:
+  schedule:
+     - cron: '0 7-22/5 * * *'
   push:
     paths-ignore:
       - '**'
@@ -13,6 +15,8 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
         with:
+          # 转到 Settings > Secrets and variables > Actions
+          # 点击 New repository secret，添加 Secret，名称为 BOT，输入你的token
           token: ${{ secrets.BOT }}
 
       - name: Set up Python
@@ -27,21 +31,10 @@ jobs:
       - name: Run ClashForge.py
         run: python ClashForge.py
 
-      - name: Push to Existing Gist
-        env:
-          GIST_ID: cc41c0b0b0d3f55ea11b576b0b5ba200
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Commit and push file
         run: |
-          FILE_PATH="clash_config.yaml"
-          NEW_FILE_NAME="clashforge.yaml"
-
-          # Get the Gist details
-          GIST_RESPONSE=$(curl -s -H "Authorization: token $GITHUB_TOKEN" "https://api.github.com/gists/$GIST_ID")
-
-          # Prepare the updated file content
-          CONTENT=$(cat "$FILE_PATH")
-
-          # Update the gist with the new file content and the new filename
-          curl -X PATCH -H "Authorization: token $GITHUB_TOKEN" \
-            -d '{"files": {"'$NEW_FILE_NAME'": {"content": "'"$CONTENT"'"}}}' \
-            "https://api.github.com/gists/$GIST_ID"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add clash_config.yaml
+          git commit -m "update" || echo "No changes to commit"
+          git push https://${{ secrets.BOT }}:x-oauth-basic@github.com/${GITHUB_REPOSITORY}.git
