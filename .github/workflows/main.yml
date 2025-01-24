@@ -18,28 +18,23 @@ jobs:
         with:
           python-version: '3.10.10'
 
-      - name: Install requirements
-        run: pip install -r ./requirements.txt
-
-      - name: Generate configuration
+      - name: Generate config
         run: python ClashForge.py
 
       - name: Push to Gist
         env:
-          GIST_ID: ${{ vars.GIST_ID }}  # Repository variable version
-          # GIST_ID: ${{ secrets.GIST_ID }}  # Secret version
+          GIST_ID: ${{ secrets.GIST_ID }}  # Using secret now
           GIST_TOKEN: ${{ secrets.GIST_TOKEN }}
         run: |
-          # Add validation for empty GIST_ID
           if [ -z "$GIST_ID" ]; then
-            echo "::error::GIST_ID is not configured"
+            echo "::error::Configure GIST_ID secret first!"
+            echo "::notice::Create secret at: https://github.com/$GITHUB_REPOSITORY/settings/secrets/actions"
             exit 1
           fi
 
-          # Update Gist with error handling
           curl -X PATCH \
             -H "Authorization: token $GIST_TOKEN" \
             -H "Accept: application/vnd.github.v3+json" \
-            https://api.github.com/gists/$GIST_ID \
-            -d "{\"files\":{\"clash_config.yaml\":{\"content\":\"$(sed 's/"/\\"/g' clash_config.yaml)\"}}}" \
-            || { echo "API request failed"; exit 1; }
+            "https://api.github.com/gists/$GIST_ID" \
+            -d "{\"files\":{\"clashforge.yaml\":{\"content\":\"$(sed 's/"/\\"/g' clash_config.yaml)\"}}}" \
+            --fail-with-body
