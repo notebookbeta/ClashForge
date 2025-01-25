@@ -46,13 +46,6 @@ proxies:
   password: 796c46f8-82a3-44e4-9937-0e5da73895dc
   udp: true
   sni: hinet.mjt000.com
-- name: 台湾WAP-T-GPT-rfqh
-  type: trojan
-  server: hinet.mjt000.com
-  port: 443
-  password: a9cda9d0-5802-400a-97da-66ceca68e8a2
-  udp: true
-  sni: hinet.mjt000.com
 - name: 澳大利亚AU-T-zgZq
   type: trojan
   server: au.mjt000.com
@@ -112,87 +105,6 @@ proxies:
   password: f89748f5-cee5-44dd-89fd-f6d49645d060
   udp: true
   sni: au.mjt000.com
-- name: 🇯🇵 日本(三网) 1
-  type: vmess
-  server: jp-1.jiedian.stream
-  port: 80
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-  ws-path: /
-  ws-headers:
-    Host: gw.alicdn.com
-- name: 🇯🇵 日本(三网) 2
-  type: vmess
-  server: jp-2.jiedian.stream
-  port: 80
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-  ws-path: /
-  ws-headers:
-    Host: gw.alicdn.com
-- name: 🇯🇵 日本(三网) 3
-  type: vmess
-  server: jp-3.jiedian.stream
-  port: 80
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  alterId: 0
-  cipher: auto
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
-  ws-path: /
-  ws-headers:
-    Host: gw.alicdn.com
-- name: 🇺🇸 美国1 (预防时间错误)
-  type: vless
-  server: 172.67.203.211
-  port: 80
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 241231.cdn01.top
-- name: 🇺🇸 美国2 (预防时间错误)
-  type: vless
-  server: 172.64.204.101
-  port: 80
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: 241015.cdn02.top
-- name: 🇺🇸 备用2 (预防dns污染)
-  type: vless
-  server: 129.153.126.128
-  port: 81
-  uuid: 209c61ea-396c-4fd1-9ca8-bb48d8e40196
-  udp: true
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: gw.alicdn.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -205,23 +117,16 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国1 (预防时间错误)
-  - 🇺🇸 美国2 (预防时间错误)
-  - 🇺🇸 备用2 (预防dns污染)
-  - 🇯🇵 日本(三网) 3
-  - 🇯🇵 日本(三网) 1
-  - 🇯🇵 日本(三网) 2
-  - 台湾WAP-T-GPT-7DFd
-  - 台湾WAP-T-GPT-rfqh
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
-  - 新加坡SG-T-oWPg
   - 新加坡SG-T-tVHX
+  - 新加坡SG-T-oWPg
   - 新加坡SG-T-ZFaE
   - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-B4AQ
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-B4AQ
   - 澳大利亚AU-T-zgZq
+  - 台湾WAP-T-GPT-7DFd
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -229,45 +134,31 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 🇺🇸 美国1 (预防时间错误)
-  - 🇺🇸 美国2 (预防时间错误)
-  - 🇺🇸 备用2 (预防dns污染)
-  - 🇯🇵 日本(三网) 3
-  - 🇯🇵 日本(三网) 1
-  - 🇯🇵 日本(三网) 2
-  - 台湾WAP-T-GPT-7DFd
-  - 台湾WAP-T-GPT-rfqh
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
-  - 新加坡SG-T-oWPg
   - 新加坡SG-T-tVHX
+  - 新加坡SG-T-oWPg
   - 新加坡SG-T-ZFaE
   - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-B4AQ
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-B4AQ
   - 澳大利亚AU-T-zgZq
+  - 台湾WAP-T-GPT-7DFd
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 🇺🇸 美国1 (预防时间错误)
-  - 🇺🇸 美国2 (预防时间错误)
-  - 🇺🇸 备用2 (预防dns污染)
-  - 🇯🇵 日本(三网) 3
-  - 🇯🇵 日本(三网) 1
-  - 🇯🇵 日本(三网) 2
-  - 台湾WAP-T-GPT-7DFd
-  - 台湾WAP-T-GPT-rfqh
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
-  - 新加坡SG-T-oWPg
   - 新加坡SG-T-tVHX
+  - 新加坡SG-T-oWPg
   - 新加坡SG-T-ZFaE
   - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-B4AQ
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-B4AQ
   - 澳大利亚AU-T-zgZq
+  - 台湾WAP-T-GPT-7DFd
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
