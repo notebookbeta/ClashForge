@@ -117,16 +117,16 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 台湾WAP-T-GPT-D5GQ
-  - 台湾WAP-T-GPT-7DFd
   - 台湾WAP-T-GPT-IPsy
-  - 新加坡SG-T-tVHX
+  - 台湾WAP-T-GPT-7DFd
+  - 台湾WAP-T-GPT-D5GQ
   - 新加坡SG-T-ZFaE
+  - 新加坡SG-T-tVHX
   - 新加坡SG-T-oWPg
-  - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-B4AQ
-  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-zgZq
+  - 澳大利亚AU-T-ulWr
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -134,31 +134,31 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 台湾WAP-T-GPT-D5GQ
-  - 台湾WAP-T-GPT-7DFd
   - 台湾WAP-T-GPT-IPsy
-  - 新加坡SG-T-tVHX
+  - 台湾WAP-T-GPT-7DFd
+  - 台湾WAP-T-GPT-D5GQ
   - 新加坡SG-T-ZFaE
+  - 新加坡SG-T-tVHX
   - 新加坡SG-T-oWPg
-  - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-B4AQ
-  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-zgZq
+  - 澳大利亚AU-T-ulWr
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 台湾WAP-T-GPT-D5GQ
-  - 台湾WAP-T-GPT-7DFd
   - 台湾WAP-T-GPT-IPsy
-  - 新加坡SG-T-tVHX
+  - 台湾WAP-T-GPT-7DFd
+  - 台湾WAP-T-GPT-D5GQ
   - 新加坡SG-T-ZFaE
+  - 新加坡SG-T-tVHX
   - 新加坡SG-T-oWPg
-  - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-B4AQ
-  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-zgZq
+  - 澳大利亚AU-T-ulWr
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
