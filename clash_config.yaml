@@ -60,14 +60,6 @@ proxies:
   password: d384ad6d-d259-45eb-ba2e-1799fa426ed4
   udp: true
   sni: au.mjt000.com
-- name: 新加坡SG-T-oWPg
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: a6f0acd5-0852-432a-b191-854658db6a92
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
 - name: 台湾WAP-T-GPT-IPsy
   type: trojan
   server: hinet.mjt000.com
@@ -75,14 +67,6 @@ proxies:
   password: a6f0acd5-0852-432a-b191-854658db6a92
   udp: true
   sni: hinet.mjt000.com
-- name: 新加坡SG-T-tVHX
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: 06322978-709f-423e-b10b-fc2a845d9564
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
 - name: 台湾WAP-T-GPT-7DFd
   type: trojan
   server: hinet.mjt000.com
@@ -90,21 +74,6 @@ proxies:
   password: 5adfc828-440d-4022-9571-0299a905b98e
   udp: true
   sni: hinet.mjt000.com
-- name: 新加坡SG-T-ZFaE
-  type: trojan
-  server: sg.mjt000.com
-  port: 443
-  password: f89748f5-cee5-44dd-89fd-f6d49645d060
-  udp: true
-  sni: sg.mjt000.com
-  skip-cert-verify: true
-- name: 澳大利亚AU-T-B4AQ
-  type: trojan
-  server: au.mjt000.com
-  port: 443
-  password: f89748f5-cee5-44dd-89fd-f6d49645d060
-  udp: true
-  sni: au.mjt000.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -120,13 +89,9 @@ proxy-groups:
   - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-7DFd
-  - 澳大利亚AU-T-ulWr
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-oWPg
   - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-B4AQ
+  - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-zgZq
-  - 新加坡SG-T-tVHX
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -137,13 +102,9 @@ proxy-groups:
   - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-7DFd
-  - 澳大利亚AU-T-ulWr
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-oWPg
   - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-B4AQ
+  - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-zgZq
-  - 新加坡SG-T-tVHX
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
@@ -152,13 +113,9 @@ proxy-groups:
   - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-7DFd
-  - 澳大利亚AU-T-ulWr
-  - 新加坡SG-T-ZFaE
-  - 新加坡SG-T-oWPg
   - 澳大利亚AU-T-QzUC
-  - 澳大利亚AU-T-B4AQ
+  - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-zgZq
-  - 新加坡SG-T-tVHX
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
