@@ -67,13 +67,6 @@ proxies:
   password: a6f0acd5-0852-432a-b191-854658db6a92
   udp: true
   sni: hinet.mjt000.com
-- name: 台湾WAP-T-GPT-7DFd
-  type: trojan
-  server: hinet.mjt000.com
-  port: 443
-  password: 5adfc828-440d-4022-9571-0299a905b98e
-  udp: true
-  sni: hinet.mjt000.com
 proxy-groups:
 - name: 节点选择
   type: select
@@ -86,11 +79,10 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 台湾WAP-T-GPT-7DFd
   - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
-  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-QzUC
   url: http://www.pinterest.com
   interval: 300
@@ -99,22 +91,20 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 台湾WAP-T-GPT-7DFd
   - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
-  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-QzUC
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 台湾WAP-T-GPT-7DFd
   - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
-  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-zgZq
   - 澳大利亚AU-T-QzUC
 rules:
 - DOMAIN,app.adjust.com,DIRECT
