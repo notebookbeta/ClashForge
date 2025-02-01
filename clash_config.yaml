@@ -81,8 +81,8 @@ proxy-groups:
   proxies:
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
-  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-zgZq
   url: http://www.pinterest.com
   interval: 300
@@ -93,8 +93,8 @@ proxy-groups:
   proxies:
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
-  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-zgZq
   url: http://www.pinterest.com
   interval: 300
@@ -103,8 +103,8 @@ proxy-groups:
   proxies:
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
-  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-ulWr
+  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-zgZq
 rules:
 - DOMAIN,app.adjust.com,DIRECT
