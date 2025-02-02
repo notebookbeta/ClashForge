@@ -81,9 +81,9 @@ proxy-groups:
   proxies:
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
+  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-zgZq
-  - 澳大利亚AU-T-QzUC
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -93,9 +93,9 @@ proxy-groups:
   proxies:
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
+  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-zgZq
-  - 澳大利亚AU-T-QzUC
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
@@ -103,9 +103,9 @@ proxy-groups:
   proxies:
   - 台湾WAP-T-GPT-D5GQ
   - 台湾WAP-T-GPT-IPsy
+  - 澳大利亚AU-T-QzUC
   - 澳大利亚AU-T-ulWr
   - 澳大利亚AU-T-zgZq
-  - 澳大利亚AU-T-QzUC
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
