@@ -32,13 +32,6 @@ dns:
     - 240.0.0.0/4
     - 0.0.0.0/32
 proxies:
-- name: 澳大利亚AU-T-QzUC
-  type: trojan
-  server: au.mjt000.com
-  port: 443
-  password: 79b25abf-8730-426a-ab47-7e92c6a68007
-  udp: true
-  sni: au.mjt000.com
 - name: 台湾WAP-T-GPT-D5GQ
   type: trojan
   server: hinet.mjt000.com
@@ -79,11 +72,10 @@ proxy-groups:
   type: url-test
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
-  - 澳大利亚AU-T-zgZq
+  - 台湾WAP-T-GPT-IPsy
   - 澳大利亚AU-T-ulWr
-  - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-zgZq
   url: http://www.pinterest.com
   interval: 300
   tolerance: 50
@@ -91,21 +83,19 @@ proxy-groups:
   type: fallback
   exclude-filter: (?i)中国|China|CN|电信|移动|联通
   proxies:
-  - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
-  - 澳大利亚AU-T-zgZq
+  - 台湾WAP-T-GPT-IPsy
   - 澳大利亚AU-T-ulWr
-  - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-zgZq
   url: http://www.pinterest.com
   interval: 300
 - name: 手动选择
   type: select
   proxies:
-  - 台湾WAP-T-GPT-IPsy
   - 台湾WAP-T-GPT-D5GQ
-  - 澳大利亚AU-T-zgZq
+  - 台湾WAP-T-GPT-IPsy
   - 澳大利亚AU-T-ulWr
-  - 澳大利亚AU-T-QzUC
+  - 澳大利亚AU-T-zgZq
 rules:
 - DOMAIN,app.adjust.com,DIRECT
 - DOMAIN,bdtj.tagtic.cn,DIRECT
