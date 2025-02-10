@@ -1686,7 +1686,7 @@ def handle_clash_error(error_message, config_file_path):
 
 # 下载最新mihomo
 def download_and_extract_latest_release():
-    url = "https://api.github.com/repos/xishang0128/mihomo-party/releases"
+    url = "https://github.com/xishang0128/mihomo-party/releases"
     response = requests.get(url)
 
     if response.status_code != 200:
