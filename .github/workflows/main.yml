@@ -11,6 +11,7 @@ on:
 jobs:
   run_demo_actions:
     runs-on: ubuntu-latest
+    timeout-minutes: 720 # 12 hours (max for public repos: 360)
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
